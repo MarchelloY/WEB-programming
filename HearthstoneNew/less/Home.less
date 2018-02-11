@@ -1,0 +1,138 @@
+body {
+  font:14px 'Verdana';
+  margin:0;
+  padding:0;
+  background:url(../Content/Home.jpg) fixed;
+  background-size:100%;
+  height:100 hv;
+}
+ul {
+  display:block;
+  margin:0;
+  padding:0;
+  list-style:none;
+  background-color:#ffffff;
+  opacity:0.7;
+  box-shadow:0 0 10px rgba(0,0,0,0.5);
+}
+ul:after {
+  display:block;
+  content:' ';
+  clear:both;
+  float:none;
+}
+ul.menu > li {
+  float:left;
+  position:relative;
+  > a {
+    display:block;
+    padding:10px;
+    color:#000000;
+    background-color:#ffffff;
+    text-decoration:none;
+  }
+  > a:hover {
+    background-color:#cdcdcd;
+  }
+}
+ul.menu > li:hover > ul.submenu {
+  display:block;
+}
+ul.submenu {
+  display:none;
+  position:absolute;
+  width:130px;
+  top:37px;
+  left:0;
+  background-color:#ffffff;
+  border-top:3px solid #ff3136;
+  > li {
+    display:block;
+    > a {
+      display:block;
+      padding:10px;
+      color:#000000;
+      background-color:#cdcdcd;
+      text-decoration:none;
+    }
+    > a:hover {
+      text-decoration:underline;
+    }
+  }
+}
+.footer {
+  position:fixed;
+  bottom:0;
+  padding-bottom:10px;
+  background:#ff9997;
+  color:#000000;
+  opacity:0.7;
+  box-shadow:0 0 10px rgba(0,0,0,0.5);
+  width:100%;
+  height:1.5%;
+}
+.log {
+  position:absolute;
+  top:145px;
+  left:41%;
+  font:40px 'Swis721 Hv BT';
+  color:#ff3136;
+  opacity:0.7;
+}
+.parent {
+  width:100%;
+  height:130%;
+  position:absolute;
+  top:400px;
+  left:0;
+  background-color:white;
+  opacity:0.7;
+}
+.reg a {
+  position:absolute;
+  top:8px;
+  left:1200px;
+  text-decoration:none;
+  color:black;
+}
+.header-title {
+  font-size:56px;
+  line-height:62px;
+  margin-bottom:30px;
+  margin-top:-50px;
+  font-family:monospace;
+  text-shadow:1px 1px 2px black;
+}
+.header-slogan {
+  font-size:28px;
+  line-height:42px;
+  text-shadow:1px 1px 2px black;
+}
+.header-arrow {
+  position:absolute;
+  bottom:100px;
+  left:50%;
+  margin-left:-1.5em;
+}
+.down:before {
+  border-style:solid;
+  border-width:0.5em 0.5em 0 0;
+  content:'';
+  display:inline-block;
+  height:1.5em;
+  left:0.15em;
+  position:relative;
+  transform:rotate(135deg);
+  width:1.5em;
+}
+.headers {
+  height:70vh;
+  color:#ffffff;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  top:100px;
+}
